@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/842.c4313bee.chunk.js","mappings":"4GAGA,UAHkB,WAChB,MAAO,gCACR,C","sources":["clientmaster/SuccessPage.jsx"],"sourcesContent":["const SuccessPage=()=>{\n  return \"Success Page is In development\"\n}\nexport default SuccessPage;"],"names":[],"sourceRoot":""}

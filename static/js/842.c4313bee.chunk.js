@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[842],{2842:function(e,n,u){u.r(n);n.default=function(){return"Success Page is In development"}}}]);
+//# sourceMappingURL=842.c4313bee.chunk.js.map
