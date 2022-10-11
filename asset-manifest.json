@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/clientmanager/static/css/main.9d89c7da.css",
-    "main.js": "/clientmanager/static/js/main.dd085438.js",
+    "main.js": "/clientmanager/static/js/main.94bc0142.js",
     "static/js/386.bd8c6587.chunk.js": "/clientmanager/static/js/386.bd8c6587.chunk.js",
     "static/js/787.28cb0dcd.chunk.js": "/clientmanager/static/js/787.28cb0dcd.chunk.js",
     "static/js/573.eff0ba65.chunk.js": "/clientmanager/static/js/573.eff0ba65.chunk.js",
     "static/js/254.f904985c.chunk.js": "/clientmanager/static/js/254.f904985c.chunk.js",
     "static/js/900.b8280488.chunk.js": "/clientmanager/static/js/900.b8280488.chunk.js",
     "static/js/990.69a8ff7f.chunk.js": "/clientmanager/static/js/990.69a8ff7f.chunk.js",
-    "static/js/73.aad19f21.chunk.js": "/clientmanager/static/js/73.aad19f21.chunk.js",
+    "static/js/73.dd06d459.chunk.js": "/clientmanager/static/js/73.dd06d459.chunk.js",
     "static/js/927.982a70e5.chunk.js": "/clientmanager/static/js/927.982a70e5.chunk.js",
     "static/js/842.c4313bee.chunk.js": "/clientmanager/static/js/842.c4313bee.chunk.js",
     "static/js/792.fc8287eb.chunk.js": "/clientmanager/static/js/792.fc8287eb.chunk.js",
@@ -51,14 +51,14 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/clientmanager/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/clientmanager/index.html",
     "main.9d89c7da.css.map": "/clientmanager/static/css/main.9d89c7da.css.map",
-    "main.dd085438.js.map": "/clientmanager/static/js/main.dd085438.js.map",
+    "main.94bc0142.js.map": "/clientmanager/static/js/main.94bc0142.js.map",
     "386.bd8c6587.chunk.js.map": "/clientmanager/static/js/386.bd8c6587.chunk.js.map",
     "787.28cb0dcd.chunk.js.map": "/clientmanager/static/js/787.28cb0dcd.chunk.js.map",
     "573.eff0ba65.chunk.js.map": "/clientmanager/static/js/573.eff0ba65.chunk.js.map",
     "254.f904985c.chunk.js.map": "/clientmanager/static/js/254.f904985c.chunk.js.map",
     "900.b8280488.chunk.js.map": "/clientmanager/static/js/900.b8280488.chunk.js.map",
     "990.69a8ff7f.chunk.js.map": "/clientmanager/static/js/990.69a8ff7f.chunk.js.map",
-    "73.aad19f21.chunk.js.map": "/clientmanager/static/js/73.aad19f21.chunk.js.map",
+    "73.dd06d459.chunk.js.map": "/clientmanager/static/js/73.dd06d459.chunk.js.map",
     "927.982a70e5.chunk.js.map": "/clientmanager/static/js/927.982a70e5.chunk.js.map",
     "842.c4313bee.chunk.js.map": "/clientmanager/static/js/842.c4313bee.chunk.js.map",
     "792.fc8287eb.chunk.js.map": "/clientmanager/static/js/792.fc8287eb.chunk.js.map",
@@ -70,6 +70,6 @@
   },
   "entrypoints": [
     "static/css/main.9d89c7da.css",
-    "static/js/main.dd085438.js"
+    "static/js/main.94bc0142.js"
   ]
 }
