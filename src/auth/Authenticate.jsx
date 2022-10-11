@@ -50,7 +50,7 @@ const Authenticate=()=>{
     })
     .then((token)=>{
       setOpen({open:true,
-        msg:"welcome"
+        msg:"welcome",
         severity:"success"
       })
       window.localStorage.setItem("token",token)
@@ -58,7 +58,7 @@ const Authenticate=()=>{
     })
     .catch((error)=>{
       setOpen({open:true,
-        msg:error
+        msg:error,
         severity:"error"
       })
     })
