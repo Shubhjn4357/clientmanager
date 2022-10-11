@@ -40,7 +40,7 @@ const CreateProfile=()=>{
     dispatch(AddData({name:CompanyData.company,payload:CompanyData,type:"create"}))
     reset()
     sessionStorage.setItem("company",CompanyData.company)
-    navigate(`add/payment`)
+    navigate(`payment`)
   }
   return <>
   <Box sx={{p:2}} className="text-start">

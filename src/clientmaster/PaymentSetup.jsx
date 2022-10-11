@@ -63,7 +63,7 @@ const PaymentSetup=()=>{
   const save=()=>{
     dispatch(AddData({name:company,payload:PaymentField,type:"payment"}))
     reset()
-    navigate(`add/theme`)
+    navigate(`theme`)
   }
   return (
     <Box sx={{p:2}} className="text-start">
