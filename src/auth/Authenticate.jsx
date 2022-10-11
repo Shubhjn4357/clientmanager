@@ -24,7 +24,7 @@ const Authenticate=()=>{
   const [open, setOpen] = useState({
     open:false,
     msg:"",
-    severity:"",
+    severity:"success",
   });
 
   const handleChange = (event) => {
@@ -49,12 +49,21 @@ const Authenticate=()=>{
       body: JSON.stringify({email:values.email,password:values.password})
     })
     .then((token)=>{
+      console.log(token)
+      if(token.ok){
       setOpen({open:true,
         msg:"welcome",
         severity:"success"
       })
       window.localStorage.setItem("token",token)
       navigate("/client/view")
+      }
+      else{
+      setOpen({open:true,
+        msg:"Invalid Credentials",
+        severity:"error"
+      })
+      }
     })
     .catch((error)=>{
       setOpen({open:true,
@@ -71,7 +80,7 @@ const Authenticate=()=>{
     })
   }
   return (<div className="container-fluid">
-  <Toast open={open.open} severity={open.severity} close={handleClose}/>
+  <Toast open={open.open} severity={open.severity} msg={open.msg} close={handleClose}/>
   <div className="row d-center">
   <div className="d-center col-5 p-4">
     <Box variant="form" className="d-center py-4 flex-column">
