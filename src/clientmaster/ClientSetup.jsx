@@ -16,10 +16,10 @@ const ClientSetup=()=> {
   const navigate=useNavigate();
   const [value, setValue] = useState(0);
   const Items=[
-    {label:"Create Profile",path:"add"},
-    {label:"Payment Setup",path:"add/payment"},
-    {label:"Theme Setup" ,path:"add/theme"},
-    {label:"Modules Setup",path:"add/module"},
+    {label:"Create Profile",path:""},
+    {label:"Payment Setup",path:"payment"},
+    {label:"Theme Setup" ,path:"theme"},
+    {label:"Modules Setup",path:"module"},
     ]
   const handleChange = (event, newValue) => {
     setValue(newValue);
