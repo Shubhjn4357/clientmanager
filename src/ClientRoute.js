@@ -9,7 +9,7 @@ const ClientRoute=()=>{
     <Suspense fallback="loading...">
       <ClientList/>
     </Suspense>}/>
-    <Route path="add/*" index element={
+    <Route path="add/*" element={
     <Suspense fallback="loading...">
       <ClientSetup/>
     </Suspense>}/>

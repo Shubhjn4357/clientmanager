@@ -4,6 +4,7 @@ const CreateProfile=lazy(()=> import("./clientmaster/CreateProfile"));
 const PaymentSetup=lazy(()=> import("./clientmaster/PaymentSetup"));
 const ThemeSetup=lazy(()=> import("./clientmaster/ThemeSetup"));
 const ModuleSetup=lazy(()=> import("./clientmaster/ModuleSetup"));
+const SuccessPage=lazy(()=> import("./clientmaster/SuccessPage"));
 const ClientSetupRoute=()=>{
   return (<Routes>
     <Route path="/" index element={
@@ -20,7 +21,11 @@ const ClientSetupRoute=()=>{
     </Suspense>}/>
     <Route path="module" index element={
     <Suspense fallback="loading...">
-      <ModuleSetup/>
+      <ModuleSetup />
+    </Suspense>}/>
+    <Route path="success" index element={
+    <Suspense fallback="loading...">
+      <SuccessPage/>
     </Suspense>}/>
  </Routes>)
 }

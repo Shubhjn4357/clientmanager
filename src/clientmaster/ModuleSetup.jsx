@@ -111,7 +111,7 @@ const ModuleSetup=()=>{
   const save=()=>{
     dispatch(AddData({name:company,payload:ModuleField,type:"module"}))
     reset()
-    navigate(`success`)
+    navigate(`add/success`)
   }
   return  <Box sx={{p:2}} className="text-start">
     <Typography variant="h4" className="fw-bold">

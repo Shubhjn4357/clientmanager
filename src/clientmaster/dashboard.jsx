@@ -39,6 +39,7 @@ const Dashboard=()=> {
   '/client/add/payment': 'Payment',
   '/client/add/theme': 'Theme',
   '/client/add/module': 'Modules',
+  '/client/add/success': 'Success',
  /* [`/client/add/payment/${company.replace("","%20")}`]: 'Payment',
   [`/client/add/theme/${company.replace("","%20")}`]: 'Theme',
   [`/client/add/module/${company.replace("","%20")}`]: 'Modules',*/
