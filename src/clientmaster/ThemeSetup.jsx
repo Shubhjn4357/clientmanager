@@ -44,7 +44,7 @@ const ThemeSetup=()=>{
   const save=()=>{
     dispatch(AddData({name:company,payload:ThemeSetup,type:"theme"}))
     reset()
-    navigate(`add/module`)
+    navigate(`module`)
   }
   return( <>
     <Box sx={{p:2}} className="text-start">
