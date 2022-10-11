@@ -11,7 +11,13 @@ import RadioGroup from '@mui/material/RadioGroup';
 import CircularCheckbox from "../feature/CircularCheckBox";
 import RotateLeftRoundedIcon from '@mui/icons-material/RotateLeftRounded';
 import Button from '@mui/material/Button';
+import {useDispatch} from "react-redux";
+import {AddData} from "../feature/StateManager";
+import {useNavigate} from "react-router-dom";
 const ThemeSetup=()=>{
+  const dispatch=useDispatch();
+  const navigate=useNavigate();
+  const company=sessionStorage.getItem("company");
   const DefaultTheme={
     primary:"#007eff",
     login:"#007eff",
@@ -36,8 +42,9 @@ const ThemeSetup=()=>{
     setThemeSetup(DefaultTheme)
   }
   const save=()=>{
-    console.log(ThemeSetup)
+    dispatch(AddData({name:company,payload:ThemeSetup,type:"theme"}))
     reset()
+    navigate(`module`)
   }
   return( <>
     <Box sx={{p:2}} className="text-start">

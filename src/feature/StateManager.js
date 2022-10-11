@@ -7,19 +7,33 @@ export const StateManager = createSlice({
   name: 'main',
   initialState: {
     data: Data,
-    themeConfig:{}
+    local:{}
   },
   reducers: {
-    AddData: (state, action) => {
-      return [...state,action.payload]
+    Local:(state,action)=>{
+      console.log(state)
     },
+    AddData: (state, action) => {
+     console.log(state)
+  /*   return [...state,
+     state.map((i,index)=>{
+       console.log(i)
+        if(i[index].company===action.payload.name){
+           return {...i,
+           [action.payload.name]:action.payload
+           }
+        }
+        return action.payload
+      })]
+    */  
+  },
     RemoveData: (state, action) => {
-      return [state.filter((e)=>e.id!==action.index)]
+      return ""
     },
   },
+  
 })
-
 // Action creators are generated for each case reducer function
-export const { AddData } = StateManager.actions
+export const { AddData,Local } = StateManager.actions
 
 export default StateManager.reducer

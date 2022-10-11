@@ -15,8 +15,14 @@ import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRound
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
+import {useDispatch} from "react-redux";
+import {AddData} from "../feature/StateManager";
+import {useNavigate} from "react-router-dom";
 
 const ModuleSetup=()=>{
+  const dispatch=useDispatch();
+  const navigate=useNavigate();
+  const company=sessionStorage.getItem("company");
   const StyledList=styled(List)(({theme})=>({
     '& .MuiListItem-root':{
       '& .MuiButtonBase-root':{
@@ -103,8 +109,9 @@ const ModuleSetup=()=>{
     setModuleField(formField)
   }
   const save=()=>{
-    console.log(ModuleField)
+    dispatch(AddData({name:company,payload:ModuleField,type:"module"}))
     reset()
+    navigate(`success`)
   }
   return  <Box sx={{p:2}} className="text-start">
     <Typography variant="h4" className="fw-bold">

@@ -40,7 +40,8 @@ const ClientList=()=>{
     {label:"Column"},
     {label:"Row"},
   ]
-  
+  console.log(Data)
+
  const CustomPagination=()=>{
   const apiRef = useGridApiContext();
   const page = useGridSelector(apiRef, gridPageSelector);

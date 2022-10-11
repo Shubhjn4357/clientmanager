@@ -13,12 +13,18 @@ import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import LockRoundedIcon from '@mui/icons-material/LockRounded';
 import Person2RoundedIcon from '@mui/icons-material/Person2Rounded';
 import SendIcon from '@mui/icons-material/Send';
+import Toast from "../feature/Toast";
 const Authenticate=()=>{
   const navigate=useNavigate();
   const [values, setValues] = useState({
     email:"",
     password:"",
     showPassword: false,
+  });
+  const [open, setOpen] = useState({
+    open:false,
+    msg:"",
+    severity:"",
   });
 
   const handleChange = (event) => {
@@ -36,9 +42,36 @@ const Authenticate=()=>{
     event.preventDefault();
   };
   const signIn=()=>{
-    navigate("/client/view")
+  
+    fetch("https://reqres.in/api/login",{
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({email:values.email,password:values.password})
+    })
+    .then((token)=>{
+      setOpen({open:true,
+        msg:"welcome"
+        severity:"success"
+      })
+      window.localStorage.setItem("token",token)
+      navigate("/client/view")
+    })
+    .catch((error)=>{
+      setOpen({open:true,
+        msg:error
+        severity:"error"
+      })
+    })
+  }
+  const handleClose=()=>{
+    setOpen({
+      open:false,
+      msg:"",
+      severity:""
+    })
   }
   return (<div className="container-fluid">
+  <Toast open={open.open} severity={open.severity} close={handleClose}/>
   <div className="row d-center">
   <div className="d-center col-5 p-4">
     <Box variant="form" className="d-center py-4 flex-column">

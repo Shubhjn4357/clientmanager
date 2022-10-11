@@ -21,24 +21,29 @@ import ClientRoute from "../ClientRoute";
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 const drawerWidth = 240;
-const breadcrumbNameMap = {
 
-  '/client': 'client',
-  '/client/view': 'View',
-  '/client/add': 'Create',
-  '/client/add/payment': 'payment',
-  '/client/add/theme': 'theme',
-  '/client/add/module': 'modules',
-};
 const list=[
   {text:"View Client",icon:<MailIcon/>,path:"/client/view"},
   {text:"Add Client",icon:<InboxIcon/>,path:"/client/add"}
   ]
 const Dashboard=()=> {
   const location = useLocation();
+ 
   const pathnames = location.pathname.split('/').filter((x) => x);
-  const [State,setState]=useState("")
   const [Item,setItem]=useState("")
+  const [State,setState]=useState("")
+  const breadcrumbNameMap = {
+  '/client': 'client',
+  '/client/view': 'View',
+  '/client/add': 'Create',
+  '/client/add/payment': 'Payment',
+  '/client/add/theme': 'Theme',
+  '/client/add/module': 'Modules',
+ /* [`/client/add/payment/${company.replace("","%20")}`]: 'Payment',
+  [`/client/add/theme/${company.replace("","%20")}`]: 'Theme',
+  [`/client/add/module/${company.replace("","%20")}`]: 'Modules',*/
+
+};
   const StyledList=styled(List)(({theme})=>({
     padding:'0.5rem',
     '& .MuiListItem-root':{
@@ -121,7 +126,7 @@ const Dashboard=()=> {
         );
       })}
     </Breadcrumbs>
-      <ClientRoute/>
+      <ClientRoute />
       </Box>
     </Box>
   );
