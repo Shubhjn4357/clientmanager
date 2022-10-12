@@ -1,6 +1,7 @@
 import Snackbar from "@mui/material/Snackbar"
 import Alert from "@mui/material/Alert"
 const Toast =({open,close,severity,msg})=>{
+  
   return <Snackbar
         anchorOrigin={{vertical:"top", horizontal:"center"}}
         open={open}

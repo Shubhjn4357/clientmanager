@@ -1,3 +1,6 @@
+:root{
+  --default:#0081ff;
+}
 .App {
   text-align: center;
 }
@@ -25,7 +28,11 @@
   left:50%;
   background:rgba(255,255,255,0.795);
   border-radius: 1rem;
+  transition:all 0.5s ease;
   transform:translate(-50%,-50%) rotateY(25deg);
+}
+.perspective-box:hover:after{
+  transform:translate(-50%,-50%) rotateY(0deg);
 }
 .fileControl{
   display:flex;
@@ -83,10 +90,10 @@
   
 }
 .Block-right .Block-Model:before{
-  right:2%;
+  right:3%;
 }
 .Block-left .Block-Model:before{
-  left:2%;
+  left:3%;
 }
 .Block-center .Block-Model:before{
   left:50%;
@@ -101,14 +108,36 @@
 }
 .card-header{
   background:none;
+  display:flex;
 }
 .card-head-icon{
-  width:5rem;
-  height:5rem;
+  padding:1rem;
   border-radius:0.5rem;
-  font-size:3rem;
   color:#0090ff;
   background:#a1cfff;
   box-shadow:2px 2px 5px #4c4c4c,
              inset -2px -2px -5px #d3e8fe;
+}
+.card-head-icon svg{
+  font-size:3rem;
+}
+.spinner{
+  padding:1rem;
+  display:grid;
+  place-items:center;
+  animation: spinner 0.5s linear infinite;
+  
+}
+.spinner svg{
+  font-size:5rem;
+  font-weight:bold;
+  color:var(--default);
+}
+@keyframes spinner{
+  from{
+    transform:rotate(0deg)
+  }
+  to{
+    transform:rotate(360deg)
+  }
 }
