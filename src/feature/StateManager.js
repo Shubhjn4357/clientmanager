@@ -4,16 +4,15 @@ const Data=[
     {id:"2",company:'',email:'',phone:'',contact:'',facilator:'',site:'',tenent:'',tenentgroup:'',action:''},
     ]
 export const StateManager = createSlice({
-  name: 'main',
-  initialState: {
-    data: Data,
-    local:{}
+  name:'main',
+  initialState:{
+    data:Data,
   },
-  reducers: {
-    Local:(state,action)=>{
-      console.log(state)
+  reducers:{
+    local: (state) =>{
+      console.warn(state)
     },
-    AddData: (state, action) => {
+    addData: (state) => {
      console.log(state)
   /*   return [...state,
      state.map((i,index)=>{
@@ -27,13 +26,12 @@ export const StateManager = createSlice({
       })]
     */  
   },
-    RemoveData: (state, action) => {
+    removeData: (state) => {
       return ""
     },
   },
   
 })
 // Action creators are generated for each case reducer function
-export const { AddData,Local } = StateManager.actions
-
+export const { addData,local,removeData } = StateManager.actions
 export default StateManager.reducer

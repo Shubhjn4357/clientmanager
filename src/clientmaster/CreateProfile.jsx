@@ -7,7 +7,7 @@ import MenuItem from '@mui/material/MenuItem';
 import RotateLeftRoundedIcon from '@mui/icons-material/RotateLeftRounded';
 import {useState} from "react";
 import {dummyCategory,state,city_names,facility} from "../feature/ArrayList";
-import {AddData} from "../feature/StateManager";
+import {local} from "../feature/StateManager";
 import {useDispatch} from "react-redux";
 import {useNavigate} from "react-router-dom";
 const CreateProfile=()=>{
@@ -37,10 +37,10 @@ const CreateProfile=()=>{
     setCompanyData(formField)
   }
   const save=()=>{
-    dispatch(AddData({name:CompanyData.company,payload:CompanyData,type:"create"}))
+    dispatch(local({name:CompanyData.company,payload:CompanyData,type:"create"}))
     reset()
     sessionStorage.setItem("company",CompanyData.company)
-    navigate(`payment`)
+    navigate('payment')
   }
   return <>
   <Box sx={{p:2}} className="text-start">

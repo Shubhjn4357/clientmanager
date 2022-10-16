@@ -16,7 +16,7 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import {useState} from "react";
 import {useDispatch} from "react-redux";
-import {AddData} from "../feature/StateManager";
+import {local} from "../feature/StateManager";
 import {useNavigate} from "react-router-dom";
 import {state,city_names,siteNum} from "../feature/ArrayList";
 
@@ -61,9 +61,9 @@ const PaymentSetup=()=>{
     setPaymentField(formField)
   }
   const save=()=>{
-    dispatch(AddData({name:company,payload:PaymentField,type:"payment"}))
+    dispatch(local({name:company,payload:PaymentField,type:"payment"}))
     reset()
-    navigate(`theme`)
+    navigate('theme')
   }
   return (
     <Box sx={{p:2}} className="text-start">

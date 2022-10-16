@@ -17,7 +17,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import SearchIcon from '@mui/icons-material/Search';
 import TextField from '@mui/material/TextField';
-import ClientRoute from "../ClientRoute";
+import ClientRoute from "../Routes/ClientRoute";
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 const drawerWidth = 240;

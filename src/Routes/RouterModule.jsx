@@ -1,8 +1,8 @@
 import {lazy,Suspense} from "react";
 import {Routes,Route,Navigate} from "react-router-dom";
-import LoadingAnimation from "./feature/LodingAnimation";
-import Authenticate from "./auth/Authenticate";
-const Dashboard=lazy(()=> import("./clientmaster/dashboard"));
+import LoadingAnimation from "../feature/LodingAnimation";
+import Authenticate from "../auth/Authenticate";
+const Dashboard=lazy(()=> import("../clientmaster/dashboard"));
 const RouterModule=()=>{
   return (<Routes>
   <Route path="/" element={<Authenticate/>}/>

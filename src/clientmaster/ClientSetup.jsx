@@ -4,12 +4,12 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import {useNavigate} from "react-router-dom";
-import ClientSetupRoute from "../ClientSetupRoute";
+import ClientSetupRoute from "../Routes/ClientSetupRoute";
 
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
+    'aria-controls': `tab-${index}`,
   };
 }
 const ClientSetup=()=> {
@@ -24,7 +24,7 @@ const ClientSetup=()=> {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-const ForwardTo=(path)=>{
+const NavigateTo=(path)=>{
   navigate(path)
 }
   return (
@@ -32,7 +32,7 @@ const ForwardTo=(path)=>{
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs variant="fullWidth" value={value} onChange={handleChange} aria-label="tabs">
          {Items.map((i,index)=>{
-          return <Tab key={index} label={i.label} onClick={()=>ForwardTo(i.path)} {...a11yProps(index)} value={index}/>
+          return <Tab key={index} label={i.label} onClick={()=>NavigateTo(i.path)} {...a11yProps(index)} value={index}/>
          })}
         </Tabs>
         <ClientSetupRoute/>

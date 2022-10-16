@@ -16,7 +16,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import {useDispatch} from "react-redux";
-import {AddData} from "../feature/StateManager";
+import {addData} from "../feature/StateManager";
 import {useNavigate} from "react-router-dom";
 
 const ModuleSetup=()=>{
@@ -109,7 +109,7 @@ const ModuleSetup=()=>{
     setModuleField(formField)
   }
   const save=()=>{
-    dispatch(AddData({name:company,payload:ModuleField,type:"module"}))
+    dispatch(addData({name:company,payload:ModuleField,type:"module"}))
     reset()
     navigate(`success`)
   }

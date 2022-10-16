@@ -1,9 +1,9 @@
 import {lazy,Suspense} from "react";
 import {Routes,Route} from "react-router-dom";
-import LoadingAnimation from "./feature/LodingAnimation";
+import LoadingAnimation from "../feature/LodingAnimation";
 
-const ClientList=lazy(()=> import("./clientmaster/ClientList"));
-const ClientSetup=lazy(()=> import("./clientmaster/ClientSetup"));
+const ClientList=lazy(()=> import("../clientmaster/ClientList"));
+const ClientSetup=lazy(()=> import("../clientmaster/ClientSetup"));
 
 const ClientRoute=()=>{
   return (<Routes>

@@ -12,7 +12,7 @@ import CircularCheckbox from "../feature/CircularCheckBox";
 import RotateLeftRoundedIcon from '@mui/icons-material/RotateLeftRounded';
 import Button from '@mui/material/Button';
 import {useDispatch} from "react-redux";
-import {AddData} from "../feature/StateManager";
+import {local} from "../feature/StateManager";
 import {useNavigate} from "react-router-dom";
 const ThemeSetup=()=>{
   const dispatch=useDispatch();
@@ -42,9 +42,9 @@ const ThemeSetup=()=>{
     setThemeSetup(DefaultTheme)
   }
   const save=()=>{
-    dispatch(AddData({name:company,payload:ThemeSetup,type:"theme"}))
+    dispatch(local({name:company,payload:ThemeSetup,type:"theme"}))
     reset()
-    navigate(`module`)
+    navigate('module')
   }
   return( <>
     <Box sx={{p:2}} className="text-start">
