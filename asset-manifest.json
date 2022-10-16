@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/clientmanager/static/css/main.a757f086.css",
-    "main.js": "/clientmanager/static/js/main.2d3c7c53.js",
-    "static/js/386.4542df54.chunk.js": "/clientmanager/static/js/386.4542df54.chunk.js",
+    "main.css": "/clientmanager/static/css/main.ca7a25cc.css",
+    "main.js": "/clientmanager/static/js/main.6a0d92f2.js",
+    "static/js/264.05038721.chunk.js": "/clientmanager/static/js/264.05038721.chunk.js",
     "static/js/787.28cb0dcd.chunk.js": "/clientmanager/static/js/787.28cb0dcd.chunk.js",
     "static/js/573.eff0ba65.chunk.js": "/clientmanager/static/js/573.eff0ba65.chunk.js",
-    "static/js/254.dbfe1271.chunk.js": "/clientmanager/static/js/254.dbfe1271.chunk.js",
-    "static/js/900.b8280488.chunk.js": "/clientmanager/static/js/900.b8280488.chunk.js",
-    "static/js/990.69a8ff7f.chunk.js": "/clientmanager/static/js/990.69a8ff7f.chunk.js",
-    "static/js/73.dd06d459.chunk.js": "/clientmanager/static/js/73.dd06d459.chunk.js",
-    "static/js/927.982a70e5.chunk.js": "/clientmanager/static/js/927.982a70e5.chunk.js",
+    "static/js/669.43b4adbc.chunk.js": "/clientmanager/static/js/669.43b4adbc.chunk.js",
+    "static/js/900.c6bae2a7.chunk.js": "/clientmanager/static/js/900.c6bae2a7.chunk.js",
+    "static/js/990.63e65c7d.chunk.js": "/clientmanager/static/js/990.63e65c7d.chunk.js",
+    "static/js/73.7e59adf3.chunk.js": "/clientmanager/static/js/73.7e59adf3.chunk.js",
+    "static/js/927.024d0582.chunk.js": "/clientmanager/static/js/927.024d0582.chunk.js",
     "static/js/842.c4313bee.chunk.js": "/clientmanager/static/js/842.c4313bee.chunk.js",
     "static/js/792.fc8287eb.chunk.js": "/clientmanager/static/js/792.fc8287eb.chunk.js",
     "static/js/354.52abea0c.chunk.js": "/clientmanager/static/js/354.52abea0c.chunk.js",
@@ -50,16 +50,16 @@
     "static/media/roboto-greek-ext-300-normal.woff2": "/clientmanager/static/media/roboto-greek-ext-300-normal.35b9d6be04b95f0f0530.woff2",
     "static/media/roboto-greek-ext-700-normal.woff2": "/clientmanager/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/clientmanager/index.html",
-    "main.a757f086.css.map": "/clientmanager/static/css/main.a757f086.css.map",
-    "main.2d3c7c53.js.map": "/clientmanager/static/js/main.2d3c7c53.js.map",
-    "386.4542df54.chunk.js.map": "/clientmanager/static/js/386.4542df54.chunk.js.map",
+    "main.ca7a25cc.css.map": "/clientmanager/static/css/main.ca7a25cc.css.map",
+    "main.6a0d92f2.js.map": "/clientmanager/static/js/main.6a0d92f2.js.map",
+    "264.05038721.chunk.js.map": "/clientmanager/static/js/264.05038721.chunk.js.map",
     "787.28cb0dcd.chunk.js.map": "/clientmanager/static/js/787.28cb0dcd.chunk.js.map",
     "573.eff0ba65.chunk.js.map": "/clientmanager/static/js/573.eff0ba65.chunk.js.map",
-    "254.dbfe1271.chunk.js.map": "/clientmanager/static/js/254.dbfe1271.chunk.js.map",
-    "900.b8280488.chunk.js.map": "/clientmanager/static/js/900.b8280488.chunk.js.map",
-    "990.69a8ff7f.chunk.js.map": "/clientmanager/static/js/990.69a8ff7f.chunk.js.map",
-    "73.dd06d459.chunk.js.map": "/clientmanager/static/js/73.dd06d459.chunk.js.map",
-    "927.982a70e5.chunk.js.map": "/clientmanager/static/js/927.982a70e5.chunk.js.map",
+    "669.43b4adbc.chunk.js.map": "/clientmanager/static/js/669.43b4adbc.chunk.js.map",
+    "900.c6bae2a7.chunk.js.map": "/clientmanager/static/js/900.c6bae2a7.chunk.js.map",
+    "990.63e65c7d.chunk.js.map": "/clientmanager/static/js/990.63e65c7d.chunk.js.map",
+    "73.7e59adf3.chunk.js.map": "/clientmanager/static/js/73.7e59adf3.chunk.js.map",
+    "927.024d0582.chunk.js.map": "/clientmanager/static/js/927.024d0582.chunk.js.map",
     "842.c4313bee.chunk.js.map": "/clientmanager/static/js/842.c4313bee.chunk.js.map",
     "792.fc8287eb.chunk.js.map": "/clientmanager/static/js/792.fc8287eb.chunk.js.map",
     "354.52abea0c.chunk.js.map": "/clientmanager/static/js/354.52abea0c.chunk.js.map",
@@ -69,7 +69,7 @@
     "233.8fdb09ba.chunk.js.map": "/clientmanager/static/js/233.8fdb09ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a757f086.css",
-    "static/js/main.2d3c7c53.js"
+    "static/css/main.ca7a25cc.css",
+    "static/js/main.6a0d92f2.js"
   ]
 }
